@@ -34,7 +34,9 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
 }
 h1 {
+    padding-top: 1.5rem;
     text-align: center;
+    padding-bottom: 1rem;
 }
 hr {
     width: 90%;
@@ -59,6 +61,17 @@ hr {
     font-size: 0.85rem;
     
 }
+.card .card-content {
+    position: relative;
+}
 .card .card-content .head-image img {
     width: 15rem;
+    position: absolute;
+    right: 14%;
+    top: -25%
+}
+.card .card-content .head-image-shadow {
+    padding-left: 2.5rem;
+    padding-bottom:;
+    
 }
