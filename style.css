@@ -41,6 +41,9 @@ h1 {
 hr {
     width: 90%;
     margin-left: 1rem;
+    border: none;
+    height: 1px;
+    background-color: rgba(48, 65, 90,0.12);
 }
 .card {
     background-color: white;
@@ -59,7 +62,12 @@ hr {
     list-style: none;
     padding: 1rem;
     font-size: 0.85rem;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#arrowDiv {
+    display: none;
 }
 .card .card-content {
     position: relative;
@@ -72,6 +80,10 @@ hr {
 }
 .card .card-content .head-image-shadow {
     padding-left: 2.5rem;
-    padding-bottom:;
-    
+
+}
+.card .card-content footer img {
+    width: 0.7rem;
+    height: 0.5rem;
+   
 }
