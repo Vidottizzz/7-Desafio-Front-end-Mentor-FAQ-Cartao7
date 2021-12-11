@@ -1,8 +1,11 @@
-function myFunction() {
-    let x = document.getElementById('arrowDiv');
-    if (x.style.display === 'none') {
-        x.style.display = 'block'
-    } else {
-        x.style.display = 'none';
+
+function showhide(divElement) {
+    let div = document.getElementById(divElement);
+
+    if (div.style.display !== "none") {
+        div.style.display = "none";
+    }
+    else {
+        div.style.display = "block";
     }
 }

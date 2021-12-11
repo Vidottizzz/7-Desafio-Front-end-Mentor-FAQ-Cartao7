@@ -33,80 +33,86 @@
                 </main>
                 <footer>
                     <ul>
-                        <li>How many team members can I invite?
+                        <li>
+                            How many team members can I invite?
                             <img
-                               
-                                onclick="myFunction()"
+                                class="arrowDown"
                                 src="./images/icon-arrow-down.svg"
                                 alt="seta para baixo"
+                                onclick="showhide('div1')"
                             >
                         </li>
-                        <div id="arrowDiv">
-                            <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
-                                team members for the Premium plan.</p> 
+                        <div id="div1">
+                            <p>
+                                You can invite up to 2 additional users on the Free plan. There is no limit on 
+                                team members for the Premium plan.
+                            </p>
                         </div>
                         <hr>
-                        <li>What is the maximum file upload size?
+                        <li>
+                            What is the maximum file upload size?
                             <img
-                                id="arrowDown"
-                                onclick="myFunction()"
+                                class="arrowDown"
                                 src="./images/icon-arrow-down.svg"
                                 alt="seta para baixo"
+                                onclick="showhide('div2')"
                             >
                         </li>
+                        <div id="div2">
+                            <p> No more than 2GB. All files in your account must fit your allotted storage space.</p>
+                        </div>
                         <hr>
-                        <li>How do I reset my password?
+                        <li>
+                            How do I reset my password?
                             <img
-                                id="arrowDown"
-                                onclick="myFunction()"
+                                class="arrowDown"
+                                onclick="showhide('div3')"
                                 src="./images/icon-arrow-down.svg"
                                 alt="seta para baixo"
                             >
                         </li>
+                        <div id="div3">
+                            Click “Forgot password” from the login page or “Change password” from your profile page.
+                            A reset link will be emailed to you.
+                        </div>
                         <hr>
-                        <li>Can I cancel my subscription?
+                        <li>
+                            Can I cancel my subscription?
                             <img
-                                id="arrowDown"
-                                onclick="myFunction()"
+                                class="arrowDown"
+                                onclick="showhide('div4')"
                                 src="./images/icon-arrow-down.svg"
                                 alt="seta para baixo"
                             >
                         </li>
+                        <div id="div4">
+                            <p> Yes! Send us a message and we’ll process your request no questions asked.</p>
+                        </div>
                         <hr>
-                        <li> Do you provide additional support?
+                        <li>
+                            Do you provide additional support?
                             <img
-                                id="arrowDown"
-                                onclick="myFunction()"
+                                class="arrowDown"
+                                onclick="showhide('div5')"
                                 src="./images/icon-arrow-down.svg"
                                 alt="seta para baixo"
                             >
                         </li>
+                        <div id="div5">
+                            <p>
+                                Chat and email support is available 24/7. Phone lines are open during normal business hours.
+                            </p>
+                        </div>
                         <hr>
                     </ul>
-                </footer>
-            </div>
+                </div>
+            </footer>
         </div>
-        <!-- 
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
-
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
-
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
-
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
-
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours. -->
-        <!-- <div class="attribution">
+    </div>
+    <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-        <script src="/app.js"></script>
-    </body>
+    <script src="/app.js"></script>
+</body>
 </html>
