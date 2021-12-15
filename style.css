@@ -66,8 +66,15 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;   
 }
-#div1,#div2,#div3,#div4,#div5 {
+#div1,#div3,#div4,#div5 {
+    display: none;
+    font-size: 0.80rem;
+    color: var(--darkGrayishBlue);
+    padding: 0rem 1rem 1rem 1rem;
+}
+#div2 {
     display: none;
     font-size: 0.80rem;
     color: var(--darkGrayishBlue);
@@ -87,5 +94,5 @@ hr {
 .card .card-content footer img {
     width: 0.7rem;
     height: 0.5rem;
-    cursor: pointer;   
 }
+

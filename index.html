@@ -33,13 +33,13 @@
                 </main>
                 <footer>
                     <ul>
-                        <li>
+                        <li onclick="toggle(this)"  class="cardList" >
                             How many team members can I invite?
                             <img
+                                id="img1"
                                 class="arrowDown"
                                 src="./images/icon-arrow-down.svg"
-                                alt="seta para baixo"
-                                onclick="showhide('div1')"
+                                alt="seta para baixo"                       
                             >
                         </li>
                         <div id="div1">
@@ -49,24 +49,24 @@
                             </p>
                         </div>
                         <hr>
-                        <li>
+                        <li onclick="showHide()" class="cardList">
                             What is the maximum file upload size?
                             <img
+                                id="img2"
                                 class="arrowDown"
                                 src="./images/icon-arrow-down.svg"
-                                alt="seta para baixo"
-                                onclick="showhide('div2')"
+                                alt="seta para baixo"                            
                             >
                         </li>
                         <div id="div2">
                             <p> No more than 2GB. All files in your account must fit your allotted storage space.</p>
                         </div>
                         <hr>
-                        <li>
+                        <li  onclick="showHide('div3','img3')" class="cardList">
                             How do I reset my password?
                             <img
+                                id="img3" 
                                 class="arrowDown"
-                                onclick="showhide('div3')"
                                 src="./images/icon-arrow-down.svg"
                                 alt="seta para baixo"
                             >
@@ -76,11 +76,11 @@
                             A reset link will be emailed to you.
                         </div>
                         <hr>
-                        <li>
+                        <li onclick="showHide('div4','img4')" class="cardList">
                             Can I cancel my subscription?
                             <img
-                                class="arrowDown"
-                                onclick="showhide('div4')"
+                                id="img4"
+                                class="arrowDown"                                
                                 src="./images/icon-arrow-down.svg"
                                 alt="seta para baixo"
                             >
@@ -89,19 +89,19 @@
                             <p> Yes! Send us a message and we’ll process your request no questions asked.</p>
                         </div>
                         <hr>
-                        <li>
+                        <li  onclick="toggle(this)"  value="Show DIV" class="cardList">
                             Do you provide additional support?
                             <img
-                                class="arrowDown"
-                                onclick="showhide('div5')"
+                                id="img5"                          
                                 src="./images/icon-arrow-down.svg"
                                 alt="seta para baixo"
+                                class="arrowDown"
                             >
                         </li>
                         <div id="div5">
-                            <p>
+                            
                                 Chat and email support is available 24/7. Phone lines are open during normal business hours.
-                            </p>
+                          
                         </div>
                         <hr>
                     </ul>
