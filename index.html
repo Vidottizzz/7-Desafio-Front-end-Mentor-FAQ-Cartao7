@@ -11,6 +11,7 @@
             href="./images/favicon-32x32.png"
         >
         <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'/>
         <title>Frontend Mentor | FAQ Accordion Card</title>
         <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -32,75 +33,54 @@
                     <h1>FAQ</h1>
                 </main>
                 <footer>
-                    <ul>
-                        <li onclick="toggle(this)"  class="cardList" >
+                    <ul> 
+                      
+                        <li class="accordion">
                             How many team members can I invite?
-                            <img
-                                id="img1"
-                                class="arrowDown"
-                                src="./images/icon-arrow-down.svg"
-                                alt="seta para baixo"                       
-                            >
+                        
                         </li>
-                        <div id="div1">
+                        <div class="accordion-content">
                             <p>
                                 You can invite up to 2 additional users on the Free plan. There is no limit on 
                                 team members for the Premium plan.
                             </p>
                         </div>
                         <hr>
-                        <li onclick="showHide()" class="cardList">
+                        <li class="accordion">
                             What is the maximum file upload size?
-                            <img
-                                id="img2"
-                                class="arrowDown"
-                                src="./images/icon-arrow-down.svg"
-                                alt="seta para baixo"                            
-                            >
+                      
                         </li>
-                        <div id="div2">
+                        <div class="accordion-content">
                             <p> No more than 2GB. All files in your account must fit your allotted storage space.</p>
                         </div>
                         <hr>
-                        <li  onclick="showHide('div3','img3')" class="cardList">
+                        <li class="accordion">
                             How do I reset my password?
-                            <img
-                                id="img3" 
-                                class="arrowDown"
-                                src="./images/icon-arrow-down.svg"
-                                alt="seta para baixo"
-                            >
+                       
                         </li>
-                        <div id="div3">
-                            Click “Forgot password” from the login page or “Change password” from your profile page.
+                        <div class="accordion-content">
+                            <p>
+                                Click “Forgot password” from the login page or “Change password” from your profile page.
                             A reset link will be emailed to you.
+                            </p>
+                            
                         </div>
                         <hr>
-                        <li onclick="showHide('div4','img4')" class="cardList">
+                        <li class="accordion">
                             Can I cancel my subscription?
-                            <img
-                                id="img4"
-                                class="arrowDown"                                
-                                src="./images/icon-arrow-down.svg"
-                                alt="seta para baixo"
-                            >
+                        
                         </li>
-                        <div id="div4">
+                        <div class="accordion-content">
                             <p> Yes! Send us a message and we’ll process your request no questions asked.</p>
                         </div>
                         <hr>
-                        <li  onclick="toggle(this)"  value="Show DIV" class="cardList">
+                        <li  class="accordion">
                             Do you provide additional support?
-                            <img
-                                id="img5"                          
-                                src="./images/icon-arrow-down.svg"
-                                alt="seta para baixo"
-                                class="arrowDown"
-                            >
+                        
                         </li>
-                        <div id="div5">
-                            
-                                Chat and email support is available 24/7. Phone lines are open during normal business hours.
+                        <div class="accordion-content">
+                            <p> Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+                               
                           
                         </div>
                         <hr>

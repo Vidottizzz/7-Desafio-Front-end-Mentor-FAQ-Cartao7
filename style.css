@@ -45,6 +45,10 @@ hr {
     height: 1px;
     background-color: rgba(48, 65, 90,0.12);
 }
+p {
+    font-size: 0.8rem;
+    padding-bottom: 0.8rem;
+}
 .card {
     background-color: white;
     width: 20.5rem;
@@ -96,3 +100,37 @@ hr {
     height: 0.5rem;
 }
 
+.accordion-content {
+  display: none;
+  width: 90%;
+  margin: auto;
+}
+/* li.accordion.is-open:after {
+   src: url(/images/icon-arrow-down.svg);
+  } */
+  
+  li.accordion:hover,
+  li.accordion.is-open {
+    background-color: white
+  }
+  
+  .show {
+      display: block;
+  }
+  .turn {
+    transform: rotate(180deg);
+  }
+
+  li.accordion::after {
+    content: "\f107";
+    font-family: "fontAwesome";
+    font-size: 18px;
+    float: right;
+  }
+  li.accordion.is-open::after{
+    content: "\f106";
+    font-family: "fontAwesome";
+    font-size: 18px;
+    float: right;
+  }
+ 
