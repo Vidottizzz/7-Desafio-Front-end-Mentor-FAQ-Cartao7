@@ -75,6 +75,10 @@ p {
     align-items: center;
     cursor: pointer;   
 }
+.card ul li.is-open{
+    padding-bottom: 0.1rem;
+
+}
 #div1,#div3,#div4,#div5 {
     display: none;
     font-size: 0.80rem;
@@ -92,8 +96,9 @@ p {
     width: 15rem;
     position: absolute;
     right: 14%;
-    top: -19%;
+    top: -19.6%; 
 }
+
 .card .card-content .head-image-shadow {
     padding-left: 2.5rem;
 
@@ -109,15 +114,18 @@ p {
   margin: auto;
   padding-right: 1.5rem;
 }
-/* li.accordion.is-open:after {
-   src: url(/images/icon-arrow-down.svg);
-  } */
-  
-  li.accordion:hover,
+
+  li.accordion:hover{
+      color: rgb(255, 0, 0);
+  }
+
   li.accordion.is-open {
-    background-color: whitesmoke;
-    border-radius: 0.5rem;
+    
+    
     font-weight: bold;
+  }
+  li.accordion.is-open:hover {
+   color:black;
   }
   
   .show {
@@ -137,4 +145,81 @@ p {
     font-size: 18px;
     float: right;
   }
+  .img2 {
+      display: none;
+  }
+  body .img3{
+      display: none;
+    position: absolute;
+    left: 9.2rem;
+    top: 11.65rem;
+    z-index : 1;
  
+     }
+/*  
+  ------------------------------------------------------------------------------------------ */
+  @media only screen and (min-width: 1250px) {
+h1 {
+    text-align: left;
+    margin-left: 1.3rem;
+    padding-top: 3.5rem;
+}
+      .card {
+          width: 60rem;
+          height: 32rem;
+          margin-left: 15rem;
+          margin: auto;
+          margin-top: 10rem;
+          /* overflow: hidden; */
+          position: relative;
+          background-image: url(/images/bg-pattern-desktop.svg);
+          background-repeat: no-repeat;
+          background-position-x: -35rem;
+          background-position-y: -18.5rem;
+          box-sizing: border-box;
+          
+        }
+        .wrapper {
+            padding-left: 1rem;
+            
+        }
+        
+        .card-content{
+            display: flex;   
+            overflow: hidden;      
+        }
+        .img1 {
+            display: none;
+        }
+
+        .card .card-content .head-image .img2 {
+            width: 30rem;          
+            display: block;
+             margin-top: 4rem;        
+             max-width: 600px;    
+             position: relative;
+             margin-left: -1.1rem;
+     
+        }
+       body .img3{
+        max-width: 12.8rem;
+       display: block;
+       z-index : 1;
+       position: absolute;
+       left: -6.3rem;
+       margin-top: 18.6rem;
+} 
+.card .card-content .head-image-shadow {
+    display: none;
+
+}    
+            
+        
+        .card ul {
+            width: 22rem;
+            margin: auto;
+            text-align: left;
+        }
+    }
+
+   
