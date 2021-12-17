@@ -1,13 +1,29 @@
-const accordionLi = document.querySelectorAll(".accordion");
+// const acc = document.querySelectorAll(".accordion");
 
-accordionLi.forEach((accordion) => {
-  accordion.onclick = function () {
+// acc.forEach((accordion) => {
+//   accordion.onclick = function () {    
+//     this.classList.toggle("is-open");
+
+//     this.nextElementSibling.classList.toggle('show');
+//   };
+// });
+
+
+const acc = document.querySelectorAll(".accordion");
+var last;
+
+acc.forEach((accordion) => {
+  accordion.onclick = function () {  
+    if (last) {
+      last.classList.toggle('is-open', false);
+      last.nextElementSibling.classList.toggle('show',false);
+      
+    }
+     
     this.classList.toggle("is-open");
-
-    let content = this.nextElementSibling;
-    console.log(content);
-    //ternario
-    accordion.classList.contains("is-open") ? content.classList.add("show") : content.classList.remove("show")
     
+    this.classList.contains('is-open') ? this.nextElementSibling.classList.add('show') : this.nextElementSibling.classList.remove('show') 
+    
+    last = this;
   };
 });

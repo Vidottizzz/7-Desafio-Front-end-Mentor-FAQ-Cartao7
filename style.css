@@ -46,16 +46,19 @@ hr {
     background-color: rgba(48, 65, 90,0.12);
 }
 p {
+    padding-top: 0.8rem;
     font-size: 0.8rem;
-    padding-bottom: 0.8rem;
+    padding-bottom: 1rem;
+    color: var(--darkGrayishBlue)
 }
 .card {
     background-color: white;
     width: 20.5rem;
-    height: 33.4rem;
+    height: 34.5rem;
     border-radius: 1.5rem;
     margin: auto;
     margin-top: 14.5rem;
+    padding-bottom: 3rem;
     position: relative;
 }
 .card ul {
@@ -89,7 +92,7 @@ p {
     width: 15rem;
     position: absolute;
     right: 14%;
-    top: -21%;
+    top: -19%;
 }
 .card .card-content .head-image-shadow {
     padding-left: 2.5rem;
@@ -104,6 +107,7 @@ p {
   display: none;
   width: 90%;
   margin: auto;
+  padding-right: 1.5rem;
 }
 /* li.accordion.is-open:after {
    src: url(/images/icon-arrow-down.svg);
@@ -111,18 +115,18 @@ p {
   
   li.accordion:hover,
   li.accordion.is-open {
-    background-color: white
+    background-color: whitesmoke;
+    border-radius: 0.5rem;
+    font-weight: bold;
   }
   
   .show {
       display: block;
   }
-  .turn {
-    transform: rotate(180deg);
-  }
 
   li.accordion::after {
     content: "\f107";
+    color: rgb(179, 3, 3);
     font-family: "fontAwesome";
     font-size: 18px;
     float: right;
